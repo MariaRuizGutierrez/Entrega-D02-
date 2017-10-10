@@ -1,0 +1,9 @@
+Telefono de actor debe ser opcional
+Telefono de los contactos del explorador deben ser opcionales
+Carpetas anidadas para los mensajes
+Precio de los viajes tiene que ser double
+El precio de las etapas tiene que ser double
+Notita que diga que la url del expediente personal sea a linkdl
+Falta el buscador del explorador
+Punto 10 del B explicar 
+Apartado a requisito 23 creo que no se pone atributo en tabla ya que es scafolding y falta relacion con trip
