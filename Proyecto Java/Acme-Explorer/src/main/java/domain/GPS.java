@@ -1,9 +1,15 @@
 package domain;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Embeddable;
+
+
 import org.hibernate.validator.constraints.NotBlank;
+@Embeddable
+@Access(AccessType.PROPERTY)
 
-
-public class GPS extends DomainEntity{
+public class GPS{
 	private double longitude;
 	private double latitude;
 	private String name;

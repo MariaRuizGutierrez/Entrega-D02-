@@ -4,6 +4,7 @@ package domain;
 import java.util.Collection;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -19,6 +20,7 @@ public class Trip extends DomainEntity {
 	private Date finishDate;
 	private String reasonWhy;
 	
+	@Column(unique=true)
 	@NotBlank
 	@Pattern(regexp="(^[0-9]{2}([0][1-9]{1}|1[0-2]{1})((0|1|2)[0-9]{1}|3[0-1]{1})-[A-Z]{4})$")
 	public String getTicker() {
