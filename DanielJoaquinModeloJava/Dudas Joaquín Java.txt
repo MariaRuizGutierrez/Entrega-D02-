@@ -10,14 +10,17 @@ el precio de las etapas individuales más el IVA correspondiente
 -Añadir atributo IVA para cada etapa (IVA puede cambiar)
 
 **Trip**
--publicationDate.  una fecha de publicación después de la cual el viaje es visible públicamente 
+-publicationDate.  es una fecha de publicación después de la cual el viaje es visible públicamente 
 y no puede ser modificado o borrado, y las fechas cuando el viaje comienza y termina.
+Si no es nulo no te deja hacer un set
+
 -reasonWhy. Algunos viajes pueden ser cancelados después de su publicación, 
 en cuyo caso el sistema debe almacenar la razón por la cual
+Se necesita atributo para saber que el viaje se ha cancelado.
+
 -Revisar patrón de tickets (/ da problemas).
 
 **Note**
-int ó Integer.
 -The note can be displayed by the corresponding managers only. (NOTA)
 
 **ApplicationFor**
