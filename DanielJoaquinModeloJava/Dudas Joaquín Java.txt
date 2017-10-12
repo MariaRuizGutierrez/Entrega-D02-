@@ -1,0 +1,29 @@
+NO TENEMOS NINGÚN ATRIBUTO UNICO
+Falta CreditCard (Daniel)
+
+**SponsorShip**
+-CreditCardNumber
+
+**Stage**
+-Propiedad derivada Price. 
+El precio se calcula automáticamente basándose en 
+el precio de las etapas individuales más el IVA correspondiente
+
+**Trip**
+-publicationDate.  una fecha de publicación después de la cual el viaje es visible públicamente 
+y no puede ser modificado o borrado, y las fechas cuando el viaje comienza y termina.
+-reasonWhy. Algunos viajes pueden ser cancelados después de su publicación, 
+en cuyo caso el sistema debe almacenar la razón por la cual
+-Revisar patrón de tickets (/ da problemas).
+
+**Note**
+int ó Integer.
+-The note can be displayed by the corresponding managers only. (NOTA)
+
+**ApplicationFor**
+-Creado enum para cada status. (falta en el UML)
+-The reason why must be obbligatiry in case the status is cancelled (NOTA en MC en UML no está) ¿Hacer restricción?
+
+**Class**
+
+
