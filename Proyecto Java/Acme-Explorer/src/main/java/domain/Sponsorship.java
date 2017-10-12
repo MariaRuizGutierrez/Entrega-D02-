@@ -3,10 +3,11 @@ package domain;
 
 public class Sponsorship extends DomainEntity {
 
-	private String		bannerURL;
-	private String		link;
-	private CreditCard	creditCard;
+	private String	bannerURL;
+	private String	link;
 
+
+	//private CreditCard	creditCard;
 
 	String getBannerURL() {
 		return this.bannerURL;
@@ -16,9 +17,9 @@ public class Sponsorship extends DomainEntity {
 		return this.link;
 	}
 
-	CreditCard getCreditCard() {
-		return this.creditCard;
-	}
+	//CreditCard getCreditCard() {
+	//	return this.creditCard;
+	//}
 
 	void setBannerURL(final String bannerURL) {
 		this.bannerURL = bannerURL;
@@ -28,8 +29,8 @@ public class Sponsorship extends DomainEntity {
 		this.link = link;
 	}
 
-	void setCreditCard(final CreditCard creditCard) {
-		this.creditCard = creditCard;
-	}
+	//void setCreditCard(final CreditCard creditCard) {
+	//	this.creditCard = creditCard;
+	//}
 
 }
