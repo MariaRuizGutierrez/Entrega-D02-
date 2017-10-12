@@ -1,14 +1,13 @@
 NO TENEMOS NINGÚN ATRIBUTO UNICO
-Falta CreditCard (Daniel)
 double lo he puesto en minúscula
 
 **SponsorShip**
--CreditCardNumber
 
 **Stage**
 -Propiedad derivada Price. 
 El precio se calcula automáticamente basándose en 
 el precio de las etapas individuales más el IVA correspondiente
+-Añadir atributo IVA para cada etapa (IVA puede cambiar)
 
 **Trip**
 -publicationDate.  una fecha de publicación después de la cual el viaje es visible públicamente 
