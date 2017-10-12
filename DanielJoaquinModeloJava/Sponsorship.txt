@@ -1,0 +1,33 @@
+public class Sponsorship extends DomainEntity{
+
+private String bannerURL;
+private String link;
+private CreditCard creditCard;
+
+
+String getBannerURL(){
+	return bannerURL;
+}
+
+String getLink(){
+	return link;
+}
+
+CreditCard getCreditCard(){
+	return creditCard;
+}
+
+void setBannerURL(String bannerURL){
+	this.bannerURL=bannerURL;
+}
+
+void setLink(String link){
+	this.link=link;
+}
+
+void setCreditCard(CreditCard creditCard){
+	this.creditCard=creditCard;
+}
+
+
+}
