@@ -31,7 +31,7 @@
 	<!-- Indexing information -->
 
 	<name>Acme-Explorer</name>
-	<url>http://www.sample-project.com</url>
+	<url>http://www.acme-explorer.com</url>
 	<description>This is D&amp;T's sample project.</description>
 	
 	<!-- Build commands -->
