@@ -37,8 +37,10 @@ Igual que administrator
 **SocialIdentities**
 -¿SocialIdentity?
 
-
 **MessageFolder**
 -Every actor has the following system folders: “in box”, “out box”, “notification box”, “trash box”, and “spam box” this are the folders by default.
 Implementar como enum???
+
+**UserAccount**
+¿Necesario crear la clase?
 
