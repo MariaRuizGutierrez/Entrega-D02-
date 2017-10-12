@@ -1,5 +1,6 @@
 NO TENEMOS NINGÚN ATRIBUTO UNICO
 Falta CreditCard (Daniel)
+double lo he puesto en minúscula
 
 **SponsorShip**
 -CreditCardNumber
@@ -24,6 +25,20 @@ int ó Integer.
 -Creado enum para cada status. (falta en el UML)
 -The reason why must be obbligatiry in case the status is cancelled (NOTA en MC en UML no está) ¿Hacer restricción?
 
-**Class**
+**Administrator**
+Extiende de actor(DANIEL) y no de domainEntity
 
+**Auditor**
+Igual que administrator
+
+**EndorserRecord**
+-Revisar patrón. (COMENTADO)
+
+**SocialIdentities**
+-¿SocialIdentity?
+
+
+**MessageFolder**
+-Every actor has the following system folders: “in box”, “out box”, “notification box”, “trash box”, and “spam box” this are the folders by default.
+Implementar como enum???
 
