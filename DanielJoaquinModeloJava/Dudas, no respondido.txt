@@ -7,15 +7,23 @@ Patron añadido para comprobar que se introduce xxxx/xxxx
 **CreditCARD**
 Cambiado los Integer por int de number, expirationYear, expirationMonth y cvv
 
+MARêA: S’ mejor para que sean obligatorios.
+
 COSAS POR HACER:
 **Category**
 --Category como poner que se puedan crear categorias con mismo nombre
 
+
+
 **ApplicationFor**
 --Restriccion de reason Why poner(falta notita en UML)
 
+MARêA: LA PONGO AHORA.
+
 **Note**
--The note can be displayed by the corresponding managers only. (NOTA) (Creo que se pondria en las vista porque aqui no se me ocurre manera de ponerlo)
+-The note can be displayed by the corresponding managers only. (NOTA) (Creo que se pondria en las vista porque aqui no se me ocurre manera de ponerlo) 
+
+MARêA: S’, adem‡s esta puesto como duda al profe.
 
 
 POSIBLES CAMBIOS:
@@ -34,6 +42,8 @@ El precio se calcula automáticamente basándose en
 el precio de las etapas individuales más el IVA correspondiente
 -Añadir atributo IVA para cada etapa (IVA puede cambiar)
 
+
+
 **Trip**
 -publicationDate.  es una fecha de publicación después de la cual el viaje es visible públicamente 
 y no puede ser modificado o borrado, y las fechas cuando el viaje comienza y termina.
@@ -42,3 +52,5 @@ Si no es nulo no te deja hacer un set
 -reasonWhy. Algunos viajes pueden ser cancelados después de su publicación, 
 en cuyo caso el sistema debe almacenar la razón por la cual
 Se necesita atributo para saber que el viaje se ha cancelado.
+
+MARêA: Crea un atributo que sea boolean en el UML para ello. Lo veo adecuado
