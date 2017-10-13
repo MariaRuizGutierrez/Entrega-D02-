@@ -4,6 +4,7 @@ package domain;
 import java.util.Collection;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.URL;
@@ -30,6 +31,7 @@ public class EducationRecord extends DomainEntity {
 	}
 	@NotBlank
 	@NotNull
+	@Pattern(regexp = "^(1|2){1}([0-9]){1}([0-9]{1})([0-9]{1})([/])(1|2){1}([0-9]){1}([0-9]{1})([0-9]{1})$")
 	public String getStudyingPeriod() {
 		return this.studyingPeriod;
 	}

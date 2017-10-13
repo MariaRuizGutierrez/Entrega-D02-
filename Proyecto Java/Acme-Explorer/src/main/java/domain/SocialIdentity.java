@@ -4,7 +4,7 @@ import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.URL;
 
 
-public class SocialIdentities extends DomainEntity{
+public class SocialIdentity extends DomainEntity{
 	private String nick;
 	private String name;
 	private String link;

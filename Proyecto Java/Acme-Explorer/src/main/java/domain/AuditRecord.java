@@ -27,8 +27,10 @@ public class AuditRecord extends DomainEntity {
 	}
 
 	public void setRealisedMoment(final Date realisedMoment) {
-		this.realisedMoment = realisedMoment;
+		if (this.draftMode == true)
+			this.realisedMoment = realisedMoment;
 	}
+
 	@NotBlank
 	@NotNull
 	public String getTitle() {
@@ -36,7 +38,8 @@ public class AuditRecord extends DomainEntity {
 	}
 
 	public void setTitle(final String title) {
-		this.title = title;
+		if (this.draftMode == true)
+			this.title = title;
 	}
 	@NotNull
 	@NotBlank
@@ -45,7 +48,8 @@ public class AuditRecord extends DomainEntity {
 	}
 
 	public void setDescription(final String description) {
-		this.description = description;
+		if (this.draftMode == true)
+			this.description = description;
 	}
 
 	public Collection<String> getAttachments() {
@@ -53,7 +57,8 @@ public class AuditRecord extends DomainEntity {
 	}
 
 	public void setAttachments(final Collection<String> attachments) {
-		this.attachments = attachments;
+		if (this.draftMode == true)
+			this.attachments = attachments;
 	}
 
 	public boolean isDraftMode() {

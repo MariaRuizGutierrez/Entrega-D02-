@@ -1,0 +1,44 @@
+**Message**
+Patron añadido para establecer que solo pueda ser 0 1 o 2
+
+**EducationRecor**
+Patron añadido para comprobar que se introduce xxxx/xxxx
+
+**CreditCARD**
+Cambiado los Integer por int de number, expirationYear, expirationMonth y cvv
+
+COSAS POR HACER:
+**Category**
+--Category como poner que se puedan crear categorias con mismo nombre
+
+**ApplicationFor**
+--Restriccion de reason Why poner(falta notita en UML)
+
+**Note**
+-The note can be displayed by the corresponding managers only. (NOTA) (Creo que se pondria en las vista porque aqui no se me ocurre manera de ponerlo)
+
+
+POSIBLES CAMBIOS:
+**AplicationFor**
+--Poner status como tipo enumerado
+**Message
+--Priority de message ha sido modelado como entero poniendo un patron, cambiar a tipo enumerado???
+**MessageFolder**
+--Habra que poner un atributo que sea booelan para expresar si es modificable o no puesto que las predefinidas no son modificables
+Como modelar que haya carpetas predefinidas?? eso se hara a la hora de popular poniendo las carpetas predefinidas y no pudiendo modificarlas
+
+OTRAS DUDAS
+**Stage**
+-Propiedad derivada Price. 
+El precio se calcula automáticamente basándose en 
+el precio de las etapas individuales más el IVA correspondiente
+-Añadir atributo IVA para cada etapa (IVA puede cambiar)
+
+**Trip**
+-publicationDate.  es una fecha de publicación después de la cual el viaje es visible públicamente 
+y no puede ser modificado o borrado, y las fechas cuando el viaje comienza y termina.
+Si no es nulo no te deja hacer un set
+
+-reasonWhy. Algunos viajes pueden ser cancelados después de su publicación, 
+en cuyo caso el sistema debe almacenar la razón por la cual
+Se necesita atributo para saber que el viaje se ha cancelado.

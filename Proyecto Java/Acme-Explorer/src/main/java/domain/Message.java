@@ -5,6 +5,7 @@ import java.util.Date;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -54,7 +55,7 @@ public class Message extends DomainEntity {
 	public void setSubject(final String subject) {
 		this.subject = subject;
 	}
-
+	@Pattern(regexp = "^(0|1|2){1}$")
 	public int getPriority() {
 		return this.priority;
 	}
