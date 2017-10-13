@@ -11,7 +11,7 @@ MARÍA: Sí mejor para que sean obligatorios.
 
 COSAS POR HACER:
 **Category**
---Category como poner que se puedan crear categorias con mismo nombre
+--Category como poner que se puedan crear categorias con mismo nombre(Duda, ponerlo como unique o no?
 
 
 
@@ -54,3 +54,6 @@ en cuyo caso el sistema debe almacenar la razÛn por la cual
 Se necesita atributo para saber que el viaje se ha cancelado.
 
 MARÍA: Crea un atributo que sea boolean en el UML para ello. Lo veo adecuado
+
+
+

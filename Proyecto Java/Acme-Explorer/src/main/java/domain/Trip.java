@@ -20,6 +20,7 @@ public class Trip extends DomainEntity {
 	private Date				startDate;
 	private Date				finishDate;
 	private String				reasonWhy;
+	private boolean				cancelado;
 
 
 	@Column(unique = true)
@@ -91,14 +92,19 @@ public class Trip extends DomainEntity {
 	public void setFinishDate(final Date finishDate) {
 		this.finishDate = finishDate;
 	}
-
+	//TODO: Me ocurre lo mismo que con stage, os dejo el error para que sepais cual es
 	public String getReasonWhy() {
+		if (this.cancelado==true)
+			this.reasonWhy!=null;
 		return this.reasonWhy;
 	}
-
 	public void setReasonWhy(final String reasonWhy) {
 		if (!this.publicationDate.equals(null))
 			this.reasonWhy = reasonWhy;
+	}
+
+	public boolean isCancelado() {
+		return this.cancelado;
 	}
 
 }

@@ -16,49 +16,49 @@ public class ApplicationFor extends DomainEntity {
 	private Collection<String>	comments;
 	private String				reasonWhy;
 	private CreditCard			creditCard;
-	
+
+
 	@Past
 	public Date getMoment() {
-		return moment;
+		return this.moment;
 	}
-	
-	public void setMoment(Date moment) {
+
+	public void setMoment(final Date moment) {
 		this.moment = moment;
 	}
-	
+
 	@NotBlank
 	public Status getStatus() {
-		return status;
+		return this.status;
 	}
-	
-	public void setStatus(Status status) {
+
+	public void setStatus(final Status status) {
 		this.status = status;
 	}
-	
+
 	public Collection<String> getComments() {
-		return comments;
+		return this.comments;
 	}
-	
-	public void setComments(Collection<String> comments) {
+
+	public void setComments(final Collection<String> comments) {
 		this.comments = comments;
 	}
-	
+
+	//TODO: No se como poner que si el estado es cancelado que reason why tenga un objeto
 	public String getReasonWhy() {
-		return reasonWhy;
+		return this.reasonWhy;
 	}
-	
-	public void setReasonWhy(String reasonWhy) {
+	public void setReasonWhy(final String reasonWhy) {
 		this.reasonWhy = reasonWhy;
 	}
-	
+
 	@CreditCardNumber
 	public CreditCard getCreditCard() {
-		return creditCard;
+		return this.creditCard;
 	}
-	
-	public void setCreditCard(CreditCard creditCard) {
+
+	public void setCreditCard(final CreditCard creditCard) {
 		this.creditCard = creditCard;
 	}
-	
-	
+
 }

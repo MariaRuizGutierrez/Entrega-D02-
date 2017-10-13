@@ -12,7 +12,6 @@ public class ContactEmergency extends DomainEntity {
 	// Attributes -------------------------------------------------------------
 
 	private String	name;
-	//TODO:Notita sobre email y phone
 	private String	email;
 	private String	phone;
 

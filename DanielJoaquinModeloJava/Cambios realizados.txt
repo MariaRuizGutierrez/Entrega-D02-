@@ -1,0 +1,13 @@
+He cambiado los Integer de CreditCard por int.
+
+En Stage he creado una constante con el iva que sera del 21 por ciento(de todas formas en clase se pregunta)
+
+He creado el atributo derivado para el precio que se calcula multiplicando el precio por el iva+1
+
+He creado patrones para el periodo de estudio para que sea de una forma concreta y he creado patron para establecer la prioridad del mensaje.(0,1 o 2) solo se puede introducir eso(leer nota si no se entiende)
+
+He añadido una notita en messageFolder para especificar que se necesita un atributo boolean para saber si es modificable la carpeta ademas de añadirlo en el modelo java
+
+Mirar el reason why que no se como ponerlo para que no sea nulo cuando estado es cancelado, me sale con un error cuando lo intento
+
+En trip me ocurre exactamente lo mismo que en stage
