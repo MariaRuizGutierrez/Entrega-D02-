@@ -11,3 +11,5 @@ He añadido una notita en messageFolder para especificar que se necesita un atrib
 Mirar el reason why que no se como ponerlo para que no sea nulo cuando estado es cancelado, me sale con un error cuando lo intento
 
 En trip me ocurre exactamente lo mismo que en stage
+
+Status en UML puesto como enum
