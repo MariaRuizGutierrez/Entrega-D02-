@@ -1,0 +1,31 @@
+Reunión 15/10/2017
+
+NotNull a todos los atributos que no tengan multiplicidad
+Quitar final
+Si ponemos double o boolean no ponemos NotNull
+Collections->
+	NoEmpty si es obligatoria
+	NotNull siempre
+
+**TRIP**
+-cambair cacelado por cancel
+-publicationDate
+	getreasonWhy normal
+	setreasonwhy está bien
+	quitar atributo boolean cancelado
+
+
+**STAGE**
+-Quitar atributo iva
+-Atributo price deja de ser derivado
+	get y set normal
+
+**AplicationFOR**
+-Crear clase como enum.
+
+**Message**
+Atributo modificable poner en ingles
+
+**NOTE*
+quitar set de createdMoment y remark.
+

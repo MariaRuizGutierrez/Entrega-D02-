@@ -18,17 +18,12 @@ public class Note extends DomainEntity{
 		return createdMoment;
 	}
 	
-	public void setCreatedMoment(Date createdMoment) {
-		this.createdMoment = createdMoment;
-	}
-	
+
 	public int getRemark() {
 		return remark;
 	}
 	
-	public void setRemark(int remark) {
-		this.remark = remark;
-	}
+
 	
 	@NotBlank
 	public String getReply() {
