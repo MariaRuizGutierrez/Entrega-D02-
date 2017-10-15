@@ -1,0 +1,5 @@
+INDEX VERSION 1.122+X:\Lessons\L01 - Introduction\S03 - Project work\Materials\Sample-Workspace-1.12\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3359865317.index
+1501179340.index
+374885460.index
+1048350443.index
