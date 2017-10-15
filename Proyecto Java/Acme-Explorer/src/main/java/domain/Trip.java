@@ -71,11 +71,6 @@ public class Trip extends DomainEntity {
 		return this.publicationDate;
 	}
 
-	public void setPublicationDate(final Date publicationDate) {
-		if (publicationDate.equals(null))
-			this.publicationDate = publicationDate;
-	}
-
 	public Date getStartDate() {
 		return this.startDate;
 	}
