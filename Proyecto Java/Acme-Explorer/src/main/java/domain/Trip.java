@@ -20,7 +20,6 @@ public class Trip extends DomainEntity {
 	private Date				startDate;
 	private Date				finishDate;
 	private String				reasonWhy;
-	private boolean				cancel;
 
 
 	@Column(unique = true)
@@ -100,10 +99,6 @@ public class Trip extends DomainEntity {
 	public void setReasonWhy(final String reasonWhy) {
 		if (!this.publicationDate.equals(null))
 			this.reasonWhy = reasonWhy;
-	}
-
-	public boolean isCancelado() {
-		return this.cancel;
 	}
 
 }

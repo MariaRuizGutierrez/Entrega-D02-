@@ -7,9 +7,8 @@ public class Stage extends DomainEntity {
 
 	private String		title;
 	private String		description;
-	private Double		precio;
+	private Double		price;
 
-	static final Double	iva	= 0.21;
 
 
 	@NotBlank
@@ -22,16 +21,20 @@ public class Stage extends DomainEntity {
 		return this.description;
 	}
 
-	public void setTitle(final String title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public void setDescription(final String description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 
-	public Double getPrecio() {
-		return this.precio * (Stage.iva + 1.0);
+	public Double getPrice() {
+		return this.price;
+	}
+	
+	public void setPrice(Double price){
+		this.price=price;
 	}
 
 }
