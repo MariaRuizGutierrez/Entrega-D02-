@@ -17,6 +17,7 @@ public class Message extends DomainEntity {
 	private String	recipient;
 	private Date	moment;
 	private String	subject;
+	private String	body;
 	private int		priority;
 
 
@@ -55,6 +56,15 @@ public class Message extends DomainEntity {
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
+
+	public String getBody() {
+		return this.body;
+	}
+
+	public void setBody(String body) {
+		this.body = body;
+	}
+
 	@Pattern(regexp = "^(0|1|2){1}$")
 	public int getPriority() {
 		return this.priority;

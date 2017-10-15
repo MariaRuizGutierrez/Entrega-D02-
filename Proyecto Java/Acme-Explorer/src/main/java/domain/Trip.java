@@ -29,7 +29,7 @@ public class Trip extends DomainEntity {
 		return this.ticker;
 	}
 
-	public void setTicker(final String ticker) {
+	public void setTicker(String ticker) {
 		this.ticker = ticker;
 	}
 
@@ -38,7 +38,7 @@ public class Trip extends DomainEntity {
 		return this.title;
 	}
 
-	public void setTitle(final String title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 
@@ -47,7 +47,7 @@ public class Trip extends DomainEntity {
 		return this.description;
 	}
 
-	public void setDescription(final String description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 
@@ -55,7 +55,7 @@ public class Trip extends DomainEntity {
 		return this.price;
 	}
 
-	public void setPrice(final double price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
@@ -63,7 +63,7 @@ public class Trip extends DomainEntity {
 		return this.requirementsExplorers;
 	}
 
-	public void setRequirementsExplorers(final Collection<String> requirementsExplorers) {
+	public void setRequirementsExplorers(Collection<String> requirementsExplorers) {
 		this.requirementsExplorers = requirementsExplorers;
 	}
 
@@ -75,7 +75,7 @@ public class Trip extends DomainEntity {
 		return this.startDate;
 	}
 
-	public void setStartDate(final Date startDate) {
+	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
@@ -83,7 +83,7 @@ public class Trip extends DomainEntity {
 		return this.finishDate;
 	}
 
-	public void setFinishDate(final Date finishDate) {
+	public void setFinishDate(Date finishDate) {
 		this.finishDate = finishDate;
 	}
 
@@ -91,7 +91,7 @@ public class Trip extends DomainEntity {
 		return this.reasonWhy;
 	}
 
-	public void setReasonWhy(final String reasonWhy) {
+	public void setReasonWhy(String reasonWhy) {
 		if (!this.publicationDate.equals(null))
 			this.reasonWhy = reasonWhy;
 	}

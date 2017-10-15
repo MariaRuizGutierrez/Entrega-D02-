@@ -23,7 +23,7 @@ public class EndorserRecord extends DomainEntity {
 		return this.fullName;
 	}
 
-	public void setFullName(final String fullName) {
+	public void setFullName(String fullName) {
 		this.fullName = fullName;
 	}
 
@@ -32,7 +32,7 @@ public class EndorserRecord extends DomainEntity {
 		return this.email;
 	}
 
-	public void setEmail(final String email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 
@@ -42,7 +42,7 @@ public class EndorserRecord extends DomainEntity {
 		return this.linkedProfile;
 	}
 
-	public void setLinkedProfile(final String linkedProfile) {
+	public void setLinkedProfile(String linkedProfile) {
 		this.linkedProfile = linkedProfile;
 	}
 
@@ -50,16 +50,16 @@ public class EndorserRecord extends DomainEntity {
 		return this.comments;
 	}
 
-	public void setComments(final Collection<String> comments) {
+	public void setComments(Collection<String> comments) {
 		this.comments = comments;
 	}
 
-	@Pattern(regexp = "(\\+([0-9]{1}|[0-9]{2}|[0-9]{3})\\(([0-9]{1}|[0-9]{2}|[0-9]{3})\\)([0-9]{4,100}))|(\\+([0-9]{1}|[0-9]{2}|[0-9]{3})\\s([0-9]{4,100}))|(([0-9] {4,100}))")
+	@Pattern(regexp = "(^(\\+([0-9]{1}|[0-9]{2}|[0-9]{3})\\(([0-9]{1}|[0-9]{2}|[0-9]{3})\\)([0-9]{4,100}))|(\\+([0-9]{1}|[0-9]{2}|[0-9]{3})\\s([0-9]{4,100}))|(([0-9] {4,100})))$")
 	public String getPhone() {
 		return this.phone;
 	}
 
-	public void setPhone(final String phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 }
