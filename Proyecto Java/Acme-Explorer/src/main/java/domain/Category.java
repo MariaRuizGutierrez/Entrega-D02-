@@ -20,7 +20,7 @@ public class Category extends DomainEntity {
 		return this.name;
 	}
 
-	public void setName(final String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 

@@ -24,7 +24,7 @@ public abstract class Actor extends DomainEntity {
 		return this.name;
 	}
 
-	public void setName(final String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -34,7 +34,7 @@ public abstract class Actor extends DomainEntity {
 		return this.surname;
 	}
 
-	public void setSurname(final String surname) {
+	public void setSurname(String surname) {
 		this.surname = surname;
 	}
 
@@ -45,7 +45,7 @@ public abstract class Actor extends DomainEntity {
 		return this.email;
 	}
 
-	public void setEmail(final String email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 
@@ -54,7 +54,7 @@ public abstract class Actor extends DomainEntity {
 		return this.phone;
 	}
 
-	public void setPhone(final String phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -62,7 +62,7 @@ public abstract class Actor extends DomainEntity {
 		return this.address;
 	}
 
-	public void setAddress(final String address) {
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
@@ -71,7 +71,7 @@ public abstract class Actor extends DomainEntity {
 		return this.activated;
 	}
 
-	public void setActivated(final boolean activated) {
+	public void setActivated(boolean activated) {
 		this.activated = activated;
 	}
 }

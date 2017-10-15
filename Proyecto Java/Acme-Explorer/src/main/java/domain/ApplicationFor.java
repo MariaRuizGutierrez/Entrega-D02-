@@ -44,7 +44,6 @@ public class ApplicationFor extends DomainEntity {
 		this.comments = comments;
 	}
 
-	//TODO: No se como poner que si el estado es cancelado que reason why tenga un objeto
 	public String getReasonWhy() {
 		return this.reasonWhy;
 	}
