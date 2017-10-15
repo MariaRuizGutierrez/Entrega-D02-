@@ -20,7 +20,7 @@ public class Curricula extends DomainEntity {
 		return this.ticker;
 	}
 
-	public void setTicker(final String ticker) {
+	public void setTicker(String ticker) {
 		this.ticker = ticker;
 	}
 

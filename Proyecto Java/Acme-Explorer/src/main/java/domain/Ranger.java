@@ -12,7 +12,7 @@ public class Ranger extends Actor {
 		return this.suspicious;
 	}
 
-	public void setSuspicious(final boolean suspicious) {
+	public void setSuspicious(boolean suspicious) {
 		this.suspicious = suspicious;
 	}
 

@@ -26,7 +26,7 @@ public class Message extends DomainEntity {
 		return this.sender;
 	}
 
-	public void setSender(final String sender) {
+	public void setSender(String sender) {
 		this.sender = sender;
 	}
 	@NotBlank
@@ -35,7 +35,7 @@ public class Message extends DomainEntity {
 		return this.recipient;
 	}
 
-	public void setRecipient(final String recipient) {
+	public void setRecipient(String recipient) {
 		this.recipient = recipient;
 	}
 	@Past
@@ -44,7 +44,7 @@ public class Message extends DomainEntity {
 		return this.moment;
 	}
 
-	public void setMoment(final Date moment) {
+	public void setMoment(Date moment) {
 		this.moment = moment;
 	}
 	@NotNull
@@ -52,7 +52,7 @@ public class Message extends DomainEntity {
 		return this.subject;
 	}
 
-	public void setSubject(final String subject) {
+	public void setSubject(String subject) {
 		this.subject = subject;
 	}
 	@Pattern(regexp = "^(0|1|2){1}$")
@@ -60,7 +60,7 @@ public class Message extends DomainEntity {
 		return this.priority;
 	}
 
-	public void setPriority(final int priority) {
+	public void setPriority(int priority) {
 		this.priority = priority;
 	}
 
