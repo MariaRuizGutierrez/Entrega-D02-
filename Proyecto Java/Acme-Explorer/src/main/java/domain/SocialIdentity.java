@@ -1,5 +1,7 @@
 package domain;
 
+import javax.validation.constraints.NotNull;
+
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.URL;
 
@@ -10,6 +12,7 @@ public class SocialIdentity extends DomainEntity{
 	private String link;
 	private String photo;
 	
+	@NotNull
 	@NotBlank
 	public String getNick() {
 		return nick;
@@ -19,6 +22,7 @@ public class SocialIdentity extends DomainEntity{
 		this.nick = nick;
 	}
 	
+	@NotNull
 	@NotBlank
 	public String getName() {
 		return name;
@@ -28,6 +32,7 @@ public class SocialIdentity extends DomainEntity{
 		this.name = name;
 	}
 	
+	@NotNull
 	@NotBlank
 	@URL
 	public String getLink() {
