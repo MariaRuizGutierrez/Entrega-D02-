@@ -2,6 +2,8 @@ package domain;
 
 import java.util.Collection;
 
+import javax.validation.constraints.NotNull;
+
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.URL;
 
@@ -11,6 +13,7 @@ public class MiscellaneousRecord extends DomainEntity{
 	private String link;
 	private Collection<String> comments;
 	
+	@NotNull
 	@NotBlank
 	public String getTitle() {
 		return title;
