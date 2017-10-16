@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Column;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -58,7 +59,8 @@ public class Trip extends DomainEntity {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-
+	
+	@NotNull
 	public Collection<String> getRequirementsExplorers() {
 		return this.requirementsExplorers;
 	}
@@ -66,7 +68,7 @@ public class Trip extends DomainEntity {
 	public void setRequirementsExplorers(Collection<String> requirementsExplorers) {
 		this.requirementsExplorers = requirementsExplorers;
 	}
-
+	
 	public Date getPublicationDate() {
 		return this.publicationDate;
 	}
@@ -86,7 +88,7 @@ public class Trip extends DomainEntity {
 	public void setFinishDate(Date finishDate) {
 		this.finishDate = finishDate;
 	}
-
+	
 	public String getReasonWhy() {
 		return this.reasonWhy;
 	}

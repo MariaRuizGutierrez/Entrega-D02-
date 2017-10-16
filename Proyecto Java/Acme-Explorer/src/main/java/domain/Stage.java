@@ -1,40 +1,51 @@
 
 package domain;
 
+import javax.validation.constraints.NotNull;
+
 import org.hibernate.validator.constraints.NotBlank;
 
 public class Stage extends DomainEntity {
 
-	private String		title;
-	private String		description;
-	private Double		price;
-
-
-
+	private String	title;
+	private String	description;
+	private double	price;
+	private int		number;
+	
 	@NotBlank
+	@NotNull
 	public String getTitle() {
-		return this.title;
+		return title;
 	}
-
-	@NotBlank
-	public String getDescription() {
-		return this.description;
-	}
-
+	
 	public void setTitle(String title) {
 		this.title = title;
 	}
-
+	
+	@NotBlank
+	@NotNull
+	public String getDescription() {
+		return description;
+	}
+	
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	public Double getPrice() {
-		return this.price;
+	
+	public double getPrice() {
+		return price;
 	}
 	
-	public void setPrice(Double price){
-		this.price=price;
+	public void setPrice(double price) {
+		this.price = price;
 	}
-
+	
+	public int getNumber() {
+		return number;
+	}
+	
+	public void setNumber(int number) {
+		this.number = number;
+	}
 }
+

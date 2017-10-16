@@ -31,7 +31,8 @@ public class EducationRecord extends DomainEntity {
 	}
 	@NotBlank
 	@NotNull
-	@Pattern(regexp = "^(1|2){1}([0-9]){1}([0-9]{1})([0-9]{1})([/])(1|2){1}([0-9]){1}([0-9]{1})([0-9]{1})$")
+	//TODO: Mirar si hay que quitarlo(Falta en UML)
+	@Pattern(regexp = "^(1|2){1}([0-9]){1}([0-9]{1})([0-9]{1})([/])((1|2){1}([0-9]){1}([0-9]{1})([0-9]{1})|([-]))$")
 	public String getStudyingPeriod() {
 		return this.studyingPeriod;
 	}
@@ -48,7 +49,7 @@ public class EducationRecord extends DomainEntity {
 	public void setInstitution(String institution) {
 		this.institution = institution;
 	}
-	@NotNull
+	
 	@URL
 	public String getLink() {
 		return this.link;
@@ -57,7 +58,8 @@ public class EducationRecord extends DomainEntity {
 	public void setLink(String link) {
 		this.link = link;
 	}
-
+	
+	@NotNull
 	public Collection<String> getComments() {
 		return this.comments;
 	}
