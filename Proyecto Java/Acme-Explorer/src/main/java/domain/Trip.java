@@ -23,6 +23,7 @@ public class Trip extends DomainEntity {
 	private Date				finishDate;
 	private String				reasonWhy;
 
+
 	@NotNull
 	@Column(unique = true)
 	@NotBlank
@@ -34,7 +35,7 @@ public class Trip extends DomainEntity {
 	public void setTicker(String ticker) {
 		this.ticker = ticker;
 	}
-	
+
 	@NotNull
 	@NotBlank
 	public String getTitle() {
@@ -44,7 +45,7 @@ public class Trip extends DomainEntity {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	
+
 	@NotNull
 	@NotBlank
 	public String getDescription() {
@@ -63,7 +64,6 @@ public class Trip extends DomainEntity {
 		this.price = price;
 	}
 
-	
 	public Collection<String> getRequirementsExplorers() {
 		return this.requirementsExplorers;
 	}
@@ -71,7 +71,7 @@ public class Trip extends DomainEntity {
 	public void setRequirementsExplorers(Collection<String> requirementsExplorers) {
 		this.requirementsExplorers = requirementsExplorers;
 	}
-	
+
 	@Past
 	@NotNull
 	public Date getPublicationDate() {
