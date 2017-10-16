@@ -3,6 +3,8 @@ package domain;
 
 import java.util.Collection;
 
+import javax.validation.constraints.NotNull;
+
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.URL;
 
@@ -13,6 +15,7 @@ public class ProfessionalRecord extends DomainEntity {
 	private String link;
 	private Collection<String> comments;
 	
+	@NotNull
 	@NotBlank
 	public String getCompanyName() {
 		return companyName;
@@ -22,6 +25,7 @@ public class ProfessionalRecord extends DomainEntity {
 		this.companyName = companyName;
 	}
 	
+	@NotNull
 	@NotBlank
 	public String getWorkPeriod() {
 		return workPeriod;
@@ -31,6 +35,7 @@ public class ProfessionalRecord extends DomainEntity {
 		this.workPeriod = workPeriod;
 	}
 	
+	@NotNull
 	@NotBlank
 	public String getRole() {
 		return role;
