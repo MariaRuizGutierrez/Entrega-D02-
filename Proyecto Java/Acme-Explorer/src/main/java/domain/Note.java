@@ -1,3 +1,4 @@
+
 package domain;
 
 import java.util.Date;
@@ -7,40 +8,38 @@ import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.NotBlank;
 
+public class Note extends DomainEntity {
 
-public class Note extends DomainEntity{
-	private Date createdMoment;
-	private int remark;
-	private String reply;
-	private Date replyMoment;
-	
+	private Date	createdMoment;
+	private int		remark;
+	private String	reply;
+	private Date	replyMoment;
+
+
 	@NotNull
 	@Past
 	public Date getCreatedMoment() {
-		return createdMoment;
+		return this.createdMoment;
 	}
-	
-	@NotNull
-	public int getRemark() {
-		return remark;
-	}
-	
 
-	
+	public int getRemark() {
+		return this.remark;
+	}
+
 	@NotBlank
 	public String getReply() {
-		return reply;
+		return this.reply;
 	}
-	
+
 	public void setReply(String reply) {
 		this.reply = reply;
 	}
-	
+
 	@Past
 	public Date getReplyMoment() {
-		return replyMoment;
+		return this.replyMoment;
 	}
-	
+
 	public void setReplyMoment(Date replyMoment) {
 		this.replyMoment = replyMoment;
 	}

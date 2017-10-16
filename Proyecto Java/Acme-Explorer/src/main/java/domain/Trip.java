@@ -70,7 +70,6 @@ public class Trip extends DomainEntity {
 		this.requirementsExplorers = requirementsExplorers;
 	}
 
-	@NotNull
 	public Date getPublicationDate() {
 		return this.publicationDate;
 	}

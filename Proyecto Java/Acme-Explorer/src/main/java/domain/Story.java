@@ -36,7 +36,6 @@ public class Story extends DomainEntity {
 		this.text = text;
 	}
 
-	@NotNull
 	public Collection<String> getAttachments() {
 		return this.attachments;
 	}

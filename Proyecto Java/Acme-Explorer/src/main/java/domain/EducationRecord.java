@@ -58,7 +58,6 @@ public class EducationRecord extends DomainEntity {
 		this.link = link;
 	}
 
-	@NotNull
 	public Collection<String> getComments() {
 		return this.comments;
 	}

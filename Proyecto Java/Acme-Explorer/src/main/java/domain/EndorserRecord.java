@@ -18,6 +18,7 @@ public class EndorserRecord extends DomainEntity {
 	private Collection<String>	comments;
 	private String				phone;
 
+
 	@NotNull
 	@NotBlank
 	public String getFullName() {
@@ -39,7 +40,6 @@ public class EndorserRecord extends DomainEntity {
 	}
 
 	@NotNull
-	@NotBlank
 	@URL
 	public String getLinkedProfile() {
 		return this.linkedProfile;
