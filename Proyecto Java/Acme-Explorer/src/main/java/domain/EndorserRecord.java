@@ -3,6 +3,7 @@ package domain;
 
 import java.util.Collection;
 
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Email;
@@ -17,7 +18,7 @@ public class EndorserRecord extends DomainEntity {
 	private Collection<String>	comments;
 	private String				phone;
 
-
+	@NotNull
 	@NotBlank
 	public String getFullName() {
 		return this.fullName;
@@ -27,6 +28,7 @@ public class EndorserRecord extends DomainEntity {
 		this.fullName = fullName;
 	}
 
+	@NotNull
 	@Email
 	public String getEmail() {
 		return this.email;
@@ -36,6 +38,7 @@ public class EndorserRecord extends DomainEntity {
 		this.email = email;
 	}
 
+	@NotNull
 	@NotBlank
 	@URL
 	public String getLinkedProfile() {
@@ -54,6 +57,7 @@ public class EndorserRecord extends DomainEntity {
 		this.comments = comments;
 	}
 
+	@NotNull
 	@Pattern(regexp = "(^(\\+([0-9]{1}|[0-9]{2}|[0-9]{3})\\(([0-9]{1}|[0-9]{2}|[0-9]{3})\\)([0-9]{4,100}))|(\\+([0-9]{1}|[0-9]{2}|[0-9]{3})\\s([0-9]{4,100}))|(([0-9] {4,100})))$")
 	public String getPhone() {
 		return this.phone;
