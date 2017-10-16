@@ -6,7 +6,6 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -26,7 +25,6 @@ public class Trip extends DomainEntity {
 
 	@NotNull
 	@Column(unique = true)
-	@NotBlank
 	@Pattern(regexp = "^[0-9]{2}(0[1-9]{1}|1[0-2]{1})((0|1|2)[0-9]{1}|3[0-1]{1})\\-[A-Z]{4}$")
 	public String getTicker() {
 		return this.ticker;
@@ -72,7 +70,6 @@ public class Trip extends DomainEntity {
 		this.requirementsExplorers = requirementsExplorers;
 	}
 
-	@Past
 	@NotNull
 	public Date getPublicationDate() {
 		return this.publicationDate;

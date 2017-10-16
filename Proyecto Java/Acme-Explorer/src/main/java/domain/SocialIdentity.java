@@ -35,7 +35,6 @@ public class SocialIdentity extends DomainEntity {
 	}
 
 	@NotNull
-	@NotBlank
 	@URL
 	public String getLink() {
 		return this.link;
@@ -45,7 +44,6 @@ public class SocialIdentity extends DomainEntity {
 		this.link = link;
 	}
 
-	@NotBlank
 	@URL
 	public String getPhoto() {
 		return this.photo;

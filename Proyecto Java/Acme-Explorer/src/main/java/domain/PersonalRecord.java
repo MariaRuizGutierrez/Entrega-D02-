@@ -28,7 +28,7 @@ public class PersonalRecord extends DomainEntity {
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
 	}
-	@NotBlank
+
 	@NotNull
 	@URL
 	public String getPhoto() {
@@ -38,7 +38,7 @@ public class PersonalRecord extends DomainEntity {
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
-	@NotBlank
+
 	@NotNull
 	@Email
 	public String getEmail() {
@@ -49,7 +49,6 @@ public class PersonalRecord extends DomainEntity {
 		this.email = email;
 	}
 
-	@NotBlank
 	@NotNull
 	@Pattern(regexp = "(^(\\+([0-9]{1}|[0-9]{2}|[0-9]{3})\\(([0-9]{1}|[0-9]{2}|[0-9]{3})\\)([0-9]{4,100}))|(\\+([0-9]{1}|[0-9]{2}|[0-9]{3})\\s([0-9]{4,100}))|(([0-9] {4,100})))$")
 	public String getPhone() {
@@ -59,7 +58,7 @@ public class PersonalRecord extends DomainEntity {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	@NotBlank
+
 	@NotNull
 	@URL
 	public String getLinkedProfile() {
