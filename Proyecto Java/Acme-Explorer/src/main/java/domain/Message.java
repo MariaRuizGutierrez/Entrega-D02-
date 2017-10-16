@@ -56,7 +56,7 @@ public class Message extends DomainEntity {
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
-
+	@NotNull
 	public String getBody() {
 		return this.body;
 	}
@@ -65,6 +65,8 @@ public class Message extends DomainEntity {
 		this.body = body;
 	}
 
+	@NotNull
+	@NotBlank
 	@Pattern(regexp = "^((HIGH)|(NEUTRAL)|(LOW))$")
 	public String getPriority() {
 		return this.priority;

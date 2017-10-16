@@ -48,7 +48,7 @@ public class EducationRecord extends DomainEntity {
 	public void setInstitution(String institution) {
 		this.institution = institution;
 	}
-	@NotNull
+
 	@URL
 	public String getLink() {
 		return this.link;
@@ -58,6 +58,7 @@ public class EducationRecord extends DomainEntity {
 		this.link = link;
 	}
 
+	@NotNull
 	public Collection<String> getComments() {
 		return this.comments;
 	}

@@ -52,6 +52,7 @@ public class AuditRecord extends DomainEntity {
 			this.description = description;
 	}
 
+	@NotNull
 	public Collection<String> getAttachments() {
 		return this.attachments;
 	}

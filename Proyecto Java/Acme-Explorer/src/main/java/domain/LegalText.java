@@ -4,7 +4,6 @@ package domain;
 import java.util.Date;
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -50,7 +49,6 @@ public class LegalText extends DomainEntity {
 			this.lawsNumber = lawsNumber;
 	}
 	@NotNull
-	@Past
 	public Date getMoment() {
 		return this.moment;
 	}
