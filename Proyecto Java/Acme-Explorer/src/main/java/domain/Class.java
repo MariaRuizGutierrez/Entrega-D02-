@@ -3,6 +3,8 @@ package domain;
 
 import java.util.Date;
 
+import javax.validation.constraints.NotNull;
+
 import org.hibernate.validator.constraints.NotBlank;
 
 public class Class extends DomainEntity {
@@ -12,6 +14,7 @@ public class Class extends DomainEntity {
 	private Date	organisedMoment;
 	private GPS		location;
 	
+	@NotNull
 	@NotBlank
 	public String getTitle() {
 		return title;
@@ -21,6 +24,7 @@ public class Class extends DomainEntity {
 		this.title = title;
 	}
 	
+	@NotNull
 	@NotBlank
 	public String getDescription() {
 		return description;
@@ -30,6 +34,7 @@ public class Class extends DomainEntity {
 		this.description = description;
 	}
 	
+	@NotNull
 	public Date getOrganisedMoment() {
 		return organisedMoment;
 	}
@@ -38,6 +43,7 @@ public class Class extends DomainEntity {
 		this.organisedMoment = organisedMoment;
 	}
 	
+	@NotNull
 	@NotBlank
 	public GPS getLocation() {
 		return location;
