@@ -5,6 +5,8 @@ import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Column;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -21,7 +23,7 @@ public class Trip extends DomainEntity {
 	private Date				finishDate;
 	private String				reasonWhy;
 
-
+	@NotNull
 	@Column(unique = true)
 	@NotBlank
 	@Pattern(regexp = "^[0-9]{2}(0[1-9]{1}|1[0-2]{1})((0|1|2)[0-9]{1}|3[0-1]{1})\\-[A-Z]{4}$")
@@ -32,7 +34,8 @@ public class Trip extends DomainEntity {
 	public void setTicker(String ticker) {
 		this.ticker = ticker;
 	}
-
+	
+	@NotNull
 	@NotBlank
 	public String getTitle() {
 		return this.title;
@@ -41,7 +44,8 @@ public class Trip extends DomainEntity {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-
+	
+	@NotNull
 	@NotBlank
 	public String getDescription() {
 		return this.description;
@@ -59,6 +63,7 @@ public class Trip extends DomainEntity {
 		this.price = price;
 	}
 
+	
 	public Collection<String> getRequirementsExplorers() {
 		return this.requirementsExplorers;
 	}
@@ -66,11 +71,14 @@ public class Trip extends DomainEntity {
 	public void setRequirementsExplorers(Collection<String> requirementsExplorers) {
 		this.requirementsExplorers = requirementsExplorers;
 	}
-
+	
+	@Past
+	@NotNull
 	public Date getPublicationDate() {
 		return this.publicationDate;
 	}
 
+	@NotNull
 	public Date getStartDate() {
 		return this.startDate;
 	}
@@ -79,6 +87,7 @@ public class Trip extends DomainEntity {
 		this.startDate = startDate;
 	}
 
+	@NotNull
 	public Date getFinishDate() {
 		return this.finishDate;
 	}
