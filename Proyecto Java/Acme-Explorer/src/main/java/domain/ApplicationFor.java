@@ -6,6 +6,7 @@ import java.util.Date;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.CreditCardNumber;
 import org.hibernate.validator.constraints.NotBlank;
@@ -13,7 +14,7 @@ import org.hibernate.validator.constraints.NotBlank;
 public class ApplicationFor extends DomainEntity {
 
 	private Date				moment;
-	private Status				status;
+	private String				status;
 	private Collection<String>	comments;
 	private String				reasonWhy;
 	private CreditCard			creditCard;
@@ -29,11 +30,12 @@ public class ApplicationFor extends DomainEntity {
 	}
 
 	@NotBlank
-	public Status getStatus() {
+	@Pattern(regexp = "^((PENDING)|(REJECTED)|(DUE)|(ACCEPTED)|(CANCELLED))$")
+	public String getStatus() {
 		return this.status;
 	}
 
-	public void setStatus(Status status) {
+	public void setStatus(String status) {
 		this.status = status;
 	}
 
