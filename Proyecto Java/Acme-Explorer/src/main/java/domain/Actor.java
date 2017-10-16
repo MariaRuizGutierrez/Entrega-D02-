@@ -38,6 +38,7 @@ public abstract class Actor extends DomainEntity {
 		this.surname = surname;
 	}
 
+	@NotNull
 	@Email
 	public String getEmail() {
 		return this.email;
@@ -64,7 +65,6 @@ public abstract class Actor extends DomainEntity {
 		this.address = address;
 	}
 
-	@NotBlank
 	public boolean isActivated() {
 		return this.activated;
 	}
