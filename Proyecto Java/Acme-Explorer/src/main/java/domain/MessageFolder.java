@@ -13,7 +13,7 @@ public class MessageFolder extends DomainEntity {
 		return this.modifiable;
 	}
 
-	public void setModificable(boolean modifiable) {
+	public void setModificable(final boolean modifiable) {
 		this.modifiable = modifiable;
 	}
 
@@ -22,7 +22,7 @@ public class MessageFolder extends DomainEntity {
 		return this.name;
 	}
 
-	public void setName(String name) {
+	public void setName(final String name) {
 		this.name = name;
 	}
 

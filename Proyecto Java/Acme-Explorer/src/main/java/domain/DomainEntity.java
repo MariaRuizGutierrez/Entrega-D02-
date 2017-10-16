@@ -44,7 +44,7 @@ public abstract class DomainEntity {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(final int id) {
 		this.id = id;
 	}
 
@@ -53,7 +53,7 @@ public abstract class DomainEntity {
 		return this.version;
 	}
 
-	public void setVersion(int version) {
+	public void setVersion(final int version) {
 		this.version = version;
 	}
 
@@ -65,7 +65,7 @@ public abstract class DomainEntity {
 	}
 
 	@Override
-	public boolean equals(Object other) {
+	public boolean equals(final Object other) {
 		boolean result;
 
 		if (this == other)

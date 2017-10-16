@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Column;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -30,7 +29,7 @@ public class Trip extends DomainEntity {
 		return this.ticker;
 	}
 
-	public void setTicker(String ticker) {
+	public void setTicker(final String ticker) {
 		this.ticker = ticker;
 	}
 
@@ -39,7 +38,7 @@ public class Trip extends DomainEntity {
 		return this.title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(final String title) {
 		this.title = title;
 	}
 
@@ -48,7 +47,7 @@ public class Trip extends DomainEntity {
 		return this.description;
 	}
 
-	public void setDescription(String description) {
+	public void setDescription(final String description) {
 		this.description = description;
 	}
 
@@ -56,19 +55,18 @@ public class Trip extends DomainEntity {
 		return this.price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(final double price) {
 		this.price = price;
 	}
-	
-	@NotNull
+
 	public Collection<String> getRequirementsExplorers() {
 		return this.requirementsExplorers;
 	}
 
-	public void setRequirementsExplorers(Collection<String> requirementsExplorers) {
+	public void setRequirementsExplorers(final Collection<String> requirementsExplorers) {
 		this.requirementsExplorers = requirementsExplorers;
 	}
-	
+
 	public Date getPublicationDate() {
 		return this.publicationDate;
 	}
@@ -77,7 +75,7 @@ public class Trip extends DomainEntity {
 		return this.startDate;
 	}
 
-	public void setStartDate(Date startDate) {
+	public void setStartDate(final Date startDate) {
 		this.startDate = startDate;
 	}
 
@@ -85,15 +83,15 @@ public class Trip extends DomainEntity {
 		return this.finishDate;
 	}
 
-	public void setFinishDate(Date finishDate) {
+	public void setFinishDate(final Date finishDate) {
 		this.finishDate = finishDate;
 	}
-	
+
 	public String getReasonWhy() {
 		return this.reasonWhy;
 	}
 
-	public void setReasonWhy(String reasonWhy) {
+	public void setReasonWhy(final String reasonWhy) {
 		if (!this.publicationDate.equals(null))
 			this.reasonWhy = reasonWhy;
 	}

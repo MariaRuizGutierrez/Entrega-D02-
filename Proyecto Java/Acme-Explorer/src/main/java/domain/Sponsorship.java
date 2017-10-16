@@ -36,7 +36,7 @@ public class Sponsorship extends DomainEntity {
 		return this.creditCard;
 	}
 	
-	public void setCreditCard(CreditCard creditCard) {
+	public void setCreditCard(final CreditCard creditCard) {
 		this.creditCard = creditCard;
 	}
 	

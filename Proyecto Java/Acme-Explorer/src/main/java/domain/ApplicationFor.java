@@ -4,7 +4,6 @@ package domain;
 import java.util.Collection;
 import java.util.Date;
 
-import javax.validation.Valid;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.CreditCardNumber;
@@ -24,7 +23,7 @@ public class ApplicationFor extends DomainEntity {
 		return this.moment;
 	}
 
-	public void setMoment(Date moment) {
+	public void setMoment(final Date moment) {
 		this.moment = moment;
 	}
 
@@ -33,7 +32,7 @@ public class ApplicationFor extends DomainEntity {
 		return this.status;
 	}
 
-	public void setStatus(Status status) {
+	public void setStatus(final Status status) {
 		this.status = status;
 	}
 
@@ -41,24 +40,24 @@ public class ApplicationFor extends DomainEntity {
 		return this.comments;
 	}
 
-	public void setComments(Collection<String> comments) {
+	public void setComments(final Collection<String> comments) {
 		this.comments = comments;
 	}
 
+	//TODO: No se como poner que si el estado es cancelado que reason why tenga un objeto
 	public String getReasonWhy() {
 		return this.reasonWhy;
 	}
-	public void setReasonWhy(String reasonWhy) {
+	public void setReasonWhy(final String reasonWhy) {
 		this.reasonWhy = reasonWhy;
 	}
 
 	@CreditCardNumber
-	@Valid
 	public CreditCard getCreditCard() {
 		return this.creditCard;
 	}
 
-	public void setCreditCard(CreditCard creditCard) {
+	public void setCreditCard(final CreditCard creditCard) {
 		this.creditCard = creditCard;
 	}
 
