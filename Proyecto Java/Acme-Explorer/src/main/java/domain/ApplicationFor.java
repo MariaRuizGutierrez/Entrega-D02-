@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.Date;
 
 import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
@@ -19,7 +20,7 @@ public class ApplicationFor extends DomainEntity {
 	private String				reasonWhy;
 	private CreditCard			creditCard;
 
-
+	@NotNull
 	@Past
 	public Date getMoment() {
 		return this.moment;
@@ -29,6 +30,7 @@ public class ApplicationFor extends DomainEntity {
 		this.moment = moment;
 	}
 
+	@NotNull
 	@NotBlank
 	@Pattern(regexp = "^((PENDING)|(REJECTED)|(DUE)|(ACCEPTED)|(CANCELLED))$")
 	public String getStatus() {
@@ -54,6 +56,7 @@ public class ApplicationFor extends DomainEntity {
 		this.reasonWhy = reasonWhy;
 	}
 
+	@NotNull
 	@CreditCardNumber
 	@Valid
 	public CreditCard getCreditCard() {
