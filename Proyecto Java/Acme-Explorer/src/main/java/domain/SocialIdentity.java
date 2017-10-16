@@ -20,7 +20,7 @@ public class SocialIdentity extends DomainEntity {
 		return this.nick;
 	}
 
-	public void setNick(final String nick) {
+	public void setNick(String nick) {
 		this.nick = nick;
 	}
 
@@ -30,7 +30,7 @@ public class SocialIdentity extends DomainEntity {
 		return this.name;
 	}
 
-	public void setName(final String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -41,7 +41,7 @@ public class SocialIdentity extends DomainEntity {
 		return this.link;
 	}
 
-	public void setLink(final String link) {
+	public void setLink(String link) {
 		this.link = link;
 	}
 
@@ -51,7 +51,7 @@ public class SocialIdentity extends DomainEntity {
 		return this.photo;
 	}
 
-	public void setPhoto(final String photo) {
+	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
 
