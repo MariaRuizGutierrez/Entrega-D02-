@@ -1,0 +1,28 @@
+{
+"Administrator":
+	[{
+	"name": "Ruben",
+    "surname": "Martinez",
+    "email": "ruben@gmail.com",
+    "phone": "+313(987)1111",
+    "address": "Parque Flores",
+    "activated":true
+    },
+    {
+    "name": "Admin 2",
+    "surname": "surname admin 2",
+    "email": "admin2@gmail.com",
+    "phone": "+313(987)1221",
+    "address": "Parque Rubio",
+    "activated":true
+    }
+    ],
+"Story":
+	{
+	"title":"story1",
+	"text":"text Story 1",
+	"attachments":["attachment 1","attachment 2"]
+	}
+ 
+    
+}

@@ -21,6 +21,12 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="450" key="height"/>
+		<item value="480" key="width"/>
+		<item value="145" key="y"/>
+		<item value="720" key="x"/>
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
 		</list>
@@ -52,6 +58,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="E:\GitHub\Entrega-D02-\JavaA+\Acme-Explorer"/>
 			<item value="X:\Lessons\L01 - Introduction\S03 - Project work\Materials\Sample-Workspace-1.12\Sample"/>
 			<item value="X:\Templates\Templates-1.12\Sample-Project"/>
 			<item value="E:\Templates\Templates-1.11\Sample-Project-1.11"/>
@@ -66,7 +73,6 @@
 			<item value="X:\Sample Workspace 1.6\Sample Project 1.6"/>
 			<item value="C:\Users\corchu\VirtualBox VMs\Design-Testing\Sample Workspace 1.4\Sample Project 1.4"/>
 			<item value="X:\Workspace\Event-Manager"/>
-			<item value="X:\Workspace\Notebook"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
