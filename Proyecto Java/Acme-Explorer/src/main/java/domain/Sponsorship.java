@@ -1,6 +1,7 @@
 
 package domain;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.CreditCardNumber;
@@ -19,7 +20,7 @@ public class Sponsorship extends DomainEntity {
 		return this.bannerURL;
 	}
 
-	public void setBannerURL(String bannerURL) {
+	public void setBannerURL(final String bannerURL) {
 		this.bannerURL = bannerURL;
 	}
 
@@ -29,17 +30,17 @@ public class Sponsorship extends DomainEntity {
 		return this.link;
 	}
 
-	public void setLink(String link) {
+	public void setLink(final String link) {
 		this.link = link;
 	}
 
-	@NotNull
+	@Valid
 	@CreditCardNumber
 	public CreditCard getCreditCard() {
 		return this.creditCard;
 	}
 
-	public void setCreditCard(CreditCard creditCard) {
+	public void setCreditCard(final CreditCard creditCard) {
 		this.creditCard = creditCard;
 	}
 

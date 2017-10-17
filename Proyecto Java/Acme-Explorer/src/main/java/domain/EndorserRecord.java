@@ -25,7 +25,7 @@ public class EndorserRecord extends DomainEntity {
 		return this.fullName;
 	}
 
-	public void setFullName(String fullName) {
+	public void setFullName(final String fullName) {
 		this.fullName = fullName;
 	}
 
@@ -35,7 +35,7 @@ public class EndorserRecord extends DomainEntity {
 		return this.email;
 	}
 
-	public void setEmail(String email) {
+	public void setEmail(final String email) {
 		this.email = email;
 	}
 
@@ -45,7 +45,7 @@ public class EndorserRecord extends DomainEntity {
 		return this.linkedProfile;
 	}
 
-	public void setLinkedProfile(String linkedProfile) {
+	public void setLinkedProfile(final String linkedProfile) {
 		this.linkedProfile = linkedProfile;
 	}
 
@@ -53,7 +53,7 @@ public class EndorserRecord extends DomainEntity {
 		return this.comments;
 	}
 
-	public void setComments(Collection<String> comments) {
+	public void setComments(final Collection<String> comments) {
 		this.comments = comments;
 	}
 
@@ -63,7 +63,7 @@ public class EndorserRecord extends DomainEntity {
 		return this.phone;
 	}
 
-	public void setPhone(String phone) {
+	public void setPhone(final String phone) {
 		this.phone = phone;
 	}
 }
