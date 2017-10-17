@@ -65,18 +65,18 @@ public class Json {
 		}
 
 	}
-	public static void dumpJSONElement(final JsonElement elemento) {
+	public static void dumpJSONElement(final JsonElement element) {
 		DomainEntity object;
-		final JsonObject jsonObject = elemento.getAsJsonObject();
-		final java.util.Set<java.util.Map.Entry<String, JsonElement>> entradas = jsonObject.entrySet();
-		for (final java.util.Map.Entry<String, JsonElement> map : entradas)
+		final JsonObject jsonObject = element.getAsJsonObject();
+		final java.util.Set<java.util.Map.Entry<String, JsonElement>> inputs = jsonObject.entrySet();
+		for (final java.util.Map.Entry<String, JsonElement> map : inputs)
 			if (map.getValue().isJsonArray()) {
 				//Si es un array significa que hay más de un objeto de esa clase
 				final JsonArray array = map.getValue().getAsJsonArray();
 				final java.util.Iterator<JsonElement> iter = array.iterator();
 				while (iter.hasNext()) {
-					final JsonElement entrada = iter.next();
-					object = Json.devuelveObjetoJava(map.getKey(), entrada);
+					final JsonElement input = iter.next();
+					object = Json.devuelveObjetoJava(map.getKey(), input);
 					if (object != null) {
 						Json.id++;
 						object.setId(Json.id);

@@ -75,7 +75,7 @@
 	{"name":"playa 3"},
 	{"name":"playa 4"},
 	],
-	"Tag":
+"Tag":
 	[
 	{"name":"TAG 1"},
 	{"name":"TAG 2"},
