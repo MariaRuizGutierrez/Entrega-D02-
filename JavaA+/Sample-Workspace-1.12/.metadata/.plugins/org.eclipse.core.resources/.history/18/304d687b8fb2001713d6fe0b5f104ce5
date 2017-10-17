@@ -1,0 +1,12 @@
+{
+"Empresa":
+	{"id" : 46,
+	"nombre" : "Miguel",
+	"empresa" : "Autentia"
+	},
+"Empresa":
+	{"id" : 47,
+	"nombre" : "Manuel",
+	"empresa" : "Arpon"
+	}
+}

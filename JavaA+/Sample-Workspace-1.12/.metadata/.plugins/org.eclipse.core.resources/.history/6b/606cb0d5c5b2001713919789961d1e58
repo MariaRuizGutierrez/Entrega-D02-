@@ -1,0 +1,11 @@
+{
+"Empresa":
+	{"id" : 46,
+	"nombre" : "Miguel",
+	"empresa" : "Autentia"
+	},
+"DomainEntity":
+	{"id":47,
+	"version":3.5
+	}
+}

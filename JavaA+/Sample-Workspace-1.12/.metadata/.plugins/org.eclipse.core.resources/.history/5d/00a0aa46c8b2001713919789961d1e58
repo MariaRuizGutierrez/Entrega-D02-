@@ -1,0 +1,12 @@
+[{
+"Empresa":
+	{"id" : 46,
+	"nombre" : "Miguel",
+	"empresa" : "Autentia"
+	},
+"Empresa":
+	{"id":47,
+	"version":3.5,
+	"nombre":"Juan"
+	}
+}]

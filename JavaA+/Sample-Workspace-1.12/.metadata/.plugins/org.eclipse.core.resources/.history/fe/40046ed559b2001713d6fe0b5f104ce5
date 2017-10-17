@@ -1,0 +1,17 @@
+package utilities;
+
+
+public class Empresa {
+	public int		id;
+
+	public String	nombre;
+
+	public String	empresa;
+
+
+	public Properties(final int id, final String nombre, final String empresa) {
+		this.id = id;
+		this.nombre = nombre;
+		this.empresa = empresa;
+	}
+}

@@ -1,0 +1,8 @@
+package utilities;
+
+import com.google.gson.JsonDeserializer;
+
+
+public class JsonCustomDeserialize implements JsonDeserializer<JsonEntry>{
+
+}

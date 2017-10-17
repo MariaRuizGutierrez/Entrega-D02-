@@ -1,0 +1,114 @@
+
+package utilities;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import domain.DomainEntity;
+
+public class Json {
+
+	public static void main(final String[] args) {
+		//Para parsear las fechas
+		//final Gson gson = new GsonBuilder().setDateFormat("dd/MM/yyyy").create();
+		final Gson gson = new Gson();
+		final BufferedReader reader;
+		final JsonParser parser;
+		final List<DomainEntity> objectList = new ArrayList<DomainEntity>();
+		try {
+			parser = new JsonParser();
+			reader = new BufferedReader(new FileReader("./src/main/java/utilities/json.txt"));
+			//final Empresa empresa = gson.fromJson(reader, Empresa.class);
+			//System.out.println(empresa.getNombre());
+			final JsonElement datos = parser.parse(reader);
+			Json.dumpJSONElement(datos);
+		} catch (final FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+	public static void dumpJSONElement(final JsonElement elemento) {
+		DomainEntity objeto;
+		final JsonObject obj = elemento.getAsJsonObject();
+		final java.util.Set<java.util.Map.Entry<String, JsonElement>> entradas = obj.entrySet();
+		for (final java.util.Map.Entry<String, JsonElement> map : entradas)
+			if (map.getValue().isJsonArray()) {
+				final JsonArray array = map.getValue().getAsJsonArray();
+				final java.util.Iterator<JsonElement> iter = array.iterator();
+				while (iter.hasNext()) {
+					final JsonElement entrada = iter.next();
+					objeto = Json.devuelveObjetoJava(map.getKey(), entrada);
+					System.out.println(objeto);
+				}
+			} else {
+				objeto = Json.devuelveObjetoJava(map.getKey(), map.getValue());
+				System.out.println(objeto);
+			}
+	}
+	private static DomainEntity devuelveObjetoJava(final String domain, final JsonElement jsonElement) {
+		final Gson gson = new Gson();
+		DomainEntity res = null;
+		switch (domain) {
+		case "Empresa":
+			res = gson.fromJson(jsonElement, Empresa.class);
+
+		}
+
+		return res;
+	}
+
+	//	public static void main(final String[] args) {
+	//		//Para parsear las fechas
+	//		//final Gson gson = new GsonBuilder().setDateFormat("dd/MM/yyyy").create();
+	//		final Gson gson = new Gson();
+	//		final BufferedReader reader;
+	//		final JsonParser parser;
+	//		try {
+	//			parser = new JsonParser();
+	//			reader = new BufferedReader(new FileReader("./src/main/java/utilities/json.txt"));
+	//			//final Empresa empresa = gson.fromJson(reader, Empresa.class);
+	//			//System.out.println(empresa.getNombre());
+	//			final JsonElement datos = parser.parse(reader);
+	//			final JsonArray array = datos.getAsJsonArray();
+	//			final java.util.Iterator<JsonElement> iter = array.iterator();
+	//			while (iter.hasNext()) {
+	//				System.out.println("Entra en while");
+	//				final JsonElement entrada = iter.next();
+	//				Json.dumpJSONElement(entrada);
+	//			}
+	//		} catch (final FileNotFoundException e) {
+	//			e.printStackTrace();
+	//		}
+	//
+	//	}
+	//	public static void dumpJSONElement(final JsonElement elemento) {
+	//		DomainEntity objeto;
+	//		final JsonObject obj = elemento.getAsJsonObject();
+	//		final java.util.Set<java.util.Map.Entry<String, JsonElement>> entradas = obj.entrySet();
+	//		for (final java.util.Map.Entry<String, JsonElement> map : entradas) {
+	//			objeto = Json.devuelveObjetoJava(map);
+	//			System.out.println(objeto);
+	//		}
+	//	}
+	//	private static DomainEntity devuelveObjetoJava(final java.util.Map.Entry<String, JsonElement> map) {
+	//		final Gson gson = new Gson();
+	//		DomainEntity res = null;
+	//		final String domain = map.getKey();
+	//		switch (domain) {
+	//		case "Empresa":
+	//			res = gson.fromJson(map.getValue(), Empresa.class);
+	//
+	//		}
+	//
+	//		return res;
+	//	}
+}

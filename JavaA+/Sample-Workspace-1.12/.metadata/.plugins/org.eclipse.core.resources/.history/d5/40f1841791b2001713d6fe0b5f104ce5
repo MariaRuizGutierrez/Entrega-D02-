@@ -1,0 +1,45 @@
+
+package utilities;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+public class Json {
+
+	public static void main(final String[] args) {
+		//Para parsear las fechas
+		//final Gson gson = new GsonBuilder().setDateFormat("dd/MM/yyyy").create();
+		final Gson gson = new Gson();
+		final BufferedReader reader;
+		final JsonParser parser;
+		try {
+			parser = new JsonParser();
+			reader = new BufferedReader(new FileReader("./src/main/java/utilities/json.txt"));
+			//final Empresa empresa = gson.fromJson(reader, Empresa.class);
+			//System.out.println(empresa.getNombre());
+			final JsonElement datos = parser.parse(reader);
+			Json.dumpJSONElement(datos);
+		} catch (final FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public static void dumpJSONElement(final JsonElement elemento) {
+		if (elemento.isJsonObject()) {
+			final JsonObject obj = elemento.getAsJsonObject();
+			final java.util.Set<java.util.Map.Entry<String, JsonElement>> entradas = obj.entrySet();
+			for (final java.util.Map.Entry<String, JsonElement> map : entradas)
+				System.out.println(map);
+		} else if (elemento.isJsonArray())
+			System.out.println("Es JsonArray");
+		// Es un conjunto de valores, que pueden ser elementos simples o compuestos
+		// Para cada valor, llamar a dumpJSONElemento(valor)
+	}
+}

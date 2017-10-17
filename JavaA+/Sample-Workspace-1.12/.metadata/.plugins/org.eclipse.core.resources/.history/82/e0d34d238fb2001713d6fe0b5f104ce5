@@ -1,0 +1,13 @@
+{
+"empleados":
+[
+	{"id" : 46,
+	"nombre" : "Miguel",
+	"empresa" : "Autentia"
+	},
+	{"id" : 47,
+	"nombre" : "Manuel",
+	"empresa" : "Dominguez"
+	}
+]
+}

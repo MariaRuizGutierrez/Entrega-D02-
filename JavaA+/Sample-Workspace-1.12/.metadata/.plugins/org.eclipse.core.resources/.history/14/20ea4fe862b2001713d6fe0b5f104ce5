@@ -1,0 +1,36 @@
+
+package utilities;
+
+public class Empresa {
+
+	private int		id;
+
+	private String	nombre;
+
+	private String	empresa;
+
+
+	public int getId() {
+		return this.id;
+	}
+
+	public void setId(final int id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return this.nombre;
+	}
+
+	public void setNombre(final String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getEmpresa() {
+		return this.empresa;
+	}
+
+	public void setEmpresa(final String empresa) {
+		this.empresa = empresa;
+	}
+}

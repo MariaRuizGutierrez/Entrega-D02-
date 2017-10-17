@@ -1,0 +1,14 @@
+package utilities;
+
+
+public class Properties {
+	private final int id;
+	 
+    private final String nombre;
+ 
+    private final String empresa;
+ 
+    public Properties(int id, String nombre, String empresa) {
+        this(id, nombre, empresa, null);
+    }
+}

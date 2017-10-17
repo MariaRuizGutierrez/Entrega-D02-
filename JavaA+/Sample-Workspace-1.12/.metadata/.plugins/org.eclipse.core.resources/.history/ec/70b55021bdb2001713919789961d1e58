@@ -1,0 +1,30 @@
+
+package utilities;
+
+import java.lang.reflect.Type;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
+
+public class JsonCustomDeserialize<DomainEntity> implements JsonDeserializer<DomainEntity> {
+
+	@Override
+	public Object deserialize(final JsonElement arg0, final Type arg1, final JsonDeserializationContext arg2) throws JsonParseException {
+		final Gson gson = new Gson();
+		if (elemento.isJsonObject()) {
+			final JsonObject obj = elemento.getAsJsonObject();
+			final java.util.Set<java.util.Map.Entry<String, JsonElement>> entradas = obj.entrySet();
+			for (final java.util.Map.Entry<String, JsonElement> map : entradas) Object object=gson.fromJson();
+				
+		} else if (elemento.isJsonArray())
+			System.out.println("Es JsonArray");
+		// Es un conjunto de valores, que pueden ser elementos simples o compuestos
+		// Para cada valor, llamar a dumpJSONElemento(valor)
+		return null;
+	}
+
+}

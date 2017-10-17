@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="66" version="2.0">
+<workbench progressCount="74" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="951" x="320" y="75">
 <fastViewData fastViewLocation="1024"/>
@@ -29,8 +29,8 @@
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.datatools.sqltools.data.internal.ui.editor.tableDataEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jpt.jpa.ui.internal.editors.PersistenceEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -41,10 +41,26 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Json.java" partName="Json.java" path="E:/GitHub/Entrega-D02-/JavaA+/Acme-Explorer/src/main/java/utilities/Json.java" title="Json.java" tooltip="Acme-Explorer/src/main/java/utilities/Json.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Acme-Explorer/src/main/java/utilities/Json.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2856" selectionTopPixel="870"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="json.txt" partName="json.txt" path="E:/GitHub/Entrega-D02-/JavaA+/Acme-Explorer/src/main/java/utilities/json.txt" title="json.txt" tooltip="Acme-Explorer/src/main/java/utilities/json.txt" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Acme-Explorer/src/main/java/utilities/json.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="183" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DomainEntity.java" partName="DomainEntity.java" path="E:/GitHub/Entrega-D02-/JavaA+/Acme-Explorer/src/main/java/domain/DomainEntity.java" title="DomainEntity.java" tooltip="Acme-Explorer/src/main/java/domain/DomainEntity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Acme-Explorer/src/main/java/domain/DomainEntity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
@@ -93,6 +109,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (1 item)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="219" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -214,7 +233,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@4c02bc48" ratio="0.6189349" ratioLeft="523" ratioRight="322" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5c6ae889">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
@@ -289,7 +308,167 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme-Explorer/src/main/java/utilities/Json.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Acme-Explorer/src/main/java/utilities/json.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme-Explorer/src/main/java/utilities/Empresa.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme-Explorer/src/main/java/domain/DomainEntity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme-Explorer/src/main/java/domain/Administrator.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme-Explorer/src/main/java/domain/Actor.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Acme-Explorer/C:\/Documents and Settings\/Student\/.m2\/repository\/com\/google\/code\/gson\/gson\/2.8.0\/gson-2.8.0.jar&lt;com.google.gson(JsonParser.class"/>
+</editors>
+<item historyLabel="Json.java" index="0">
+<position/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="2171" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="1834" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position/>
+</item>
+<item historyLabel="Empresa.java" index="2">
+<position info="not_deleted" x="114" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="1896" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="2791" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="142" y="0"/>
+</item>
+<item historyLabel="Administrator.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Actor.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="126" y="0"/>
+</item>
+<item historyLabel="Actor.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="2791" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="Actor.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="Empresa.java" index="2">
+<position info="not_deleted" x="114" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="2791" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="2861" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="Empresa.java" index="2">
+<position info="not_deleted" x="114" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="Administrator.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Actor.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Empresa.java" index="2">
+<position info="not_deleted" x="114" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="2723" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="Empresa.java" index="2">
+<position info="not_deleted" x="114" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="2723" y="0"/>
+</item>
+<item historyLabel="JsonParser.class" index="6">
+<position/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="2723" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position info="not_deleted" x="2248" y="0"/>
+</item>
+<item historyLabel="DomainEntity.java" index="3">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="183" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position/>
+</item>
+<item historyLabel="Administrator.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position/>
+</item>
+<item historyLabel="Actor.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Json.java" index="0">
+<position/>
+</item>
+<item historyLabel="json.txt" index="1">
+<position info="not_deleted" x="183" y="0"/>
+</item>
+<item active="true" historyLabel="Json.java" index="0">
+<position/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -308,6 +487,33 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="JsonParser.class" tooltip="com.google.gson.JsonParser">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Acme-Explorer/C:\/Documents and Settings\/Student\/.m2\/repository\/com\/google\/code\/gson\/gson\/2.8.0\/gson-2.8.0.jar&lt;com.google.gson(JsonParser.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Actor.java" tooltip="Acme-Explorer/src/main/java/domain/Actor.java">
+<persistable path="/Acme-Explorer/src/main/java/domain/Actor.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Administrator.java" tooltip="Acme-Explorer/src/main/java/domain/Administrator.java">
+<persistable path="/Acme-Explorer/src/main/java/domain/Administrator.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DomainEntity.java" tooltip="Acme-Explorer/src/main/java/domain/DomainEntity.java">
+<persistable path="/Acme-Explorer/src/main/java/domain/DomainEntity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="json.txt" tooltip="Acme-Explorer/src/main/java/utilities/json.txt">
+<persistable path="/Acme-Explorer/src/main/java/utilities/json.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JsonCustomDeserialize.java" tooltip="Acme-Explorer/src/main/java/utilities/JsonCustomDeserialize.java">
+<persistable path="/Acme-Explorer/src/main/java/utilities/JsonCustomDeserialize.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LegalText.java" tooltip="Acme-Explorer/src/main/java/domain/LegalText.java">
+<persistable path="/Acme-Explorer/src/main/java/domain/LegalText.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Json.java" tooltip="Acme-Explorer/src/main/java/utilities/Json.java">
+<persistable path="/Acme-Explorer/src/main/java/utilities/Json.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Empresa.java" tooltip="Acme-Explorer/src/main/java/utilities/Empresa.java">
+<persistable path="/Acme-Explorer/src/main/java/utilities/Empresa.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="layout.jsp" tooltip="Sample/src/main/webapp/views/master-page/layout.jsp">
 <persistable path="/Sample/src/main/webapp/views/master-page/layout.jsp"/>
 </file>
@@ -325,33 +531,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EclipseConsole.java" tooltip="Sample-Project/src/main/java/utilities/internal/EclipseConsole.java">
 <persistable path="/Sample-Project/src/main/java/utilities/internal/EclipseConsole.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractTest.java" tooltip="Sample-Project/src/test/java/utilities/AbstractTest.java">
-<persistable path="/Sample-Project/src/test/java/utilities/AbstractTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="Sample-Project/pom.xml">
-<persistable path="/Sample-Project/pom.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QueryDatabase.java" tooltip="Sample-Project/src/main/java/utilities/QueryDatabase.java">
-<persistable path="/Sample-Project/src/main/java/utilities/QueryDatabase.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DatabaseConfig.java" tooltip="Sample-Project/src/main/java/utilities/DatabaseConfig.java">
-<persistable path="/Sample-Project/src/main/java/utilities/DatabaseConfig.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HashPassword.java" tooltip="Sample-Project/src/main/java/utilities/HashPassword.java">
-<persistable path="/Sample-Project/src/main/java/utilities/HashPassword.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PopulateDatabase.java" tooltip="Sample-Project/src/main/java/utilities/PopulateDatabase.java">
-<persistable path="/Sample-Project/src/main/java/utilities/PopulateDatabase.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Entities.map" tooltip="Sample-Project/src/main/resources/Entities.map">
-<persistable path="/Sample-Project/src/main/resources/Entities.map"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Integer.class" tooltip="java.lang.Integer">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Sample-Project/C:\/Program Files\/Java\/jdk1.7.0_13\/jre\/lib\/rt.jar&lt;java.lang(Integer.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="RunAfterTestMethodCallbacks.class" tooltip="org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Sample-Project/C:\/Documents and Settings\/Student\/.m2\/repository\/org\/springframework\/spring-test\/3.2.4.RELEASE\/spring-test-3.2.4.RELEASE.jar&lt;org.springframework.test.context.junit4.statements(RunAfterTestMethodCallbacks.class"/>
 </file>
 </mruList>
 </workbench>
