@@ -179,7 +179,6 @@ public class Json {
 		case "Tag":
 			res = gson.fromJson(jsonElement, Tag.class);
 			break;
-		
 		}
 
 		return res;
